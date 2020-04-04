@@ -12,6 +12,8 @@ spring:
     database: mysql
     show-sql: true
     generate-ddl: true
+  rabbitmq:
+    host: centos7.jacktong726.com
 eureka:
   client:
     service-url:

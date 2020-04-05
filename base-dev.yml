@@ -19,7 +19,6 @@ spring:
       discovery:
         enabled: true
         service-id: TENSQUARE-CONFIG
-      profile: ${spring.profiles.active:default}
     bus:
       enabled: true
 eureka:

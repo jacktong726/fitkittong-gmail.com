@@ -19,7 +19,7 @@ spring:
       discovery:
         enabled: true
         service-id: TENSQUARE-CONFIG
-      profile: jacktong726
+      profile: dev
     bus:
       enabled: true
       id: ${spring.application.name}:${spring.cloud.config.profile}:${random.value}

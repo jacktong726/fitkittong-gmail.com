@@ -20,4 +20,14 @@ eureka:
       defaultZone: http://alicloud.jacktong726.com:6868/eureka
   instance:
     prefer-ip-address: true
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: tensquare-config
+      #profile: dzy
+    bus:
+      enabled: true
+      id: ${spring.application.name}:${spring.cloud.config.profile}:${random.value}
 myvalue: okok

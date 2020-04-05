@@ -14,13 +14,6 @@ spring:
     generate-ddl: true
   rabbitmq:
     host: alicloud.jacktong726.com
-eureka:
-  client:
-    service-url:
-      defaultZone: http://alicloud.jacktong726.com:6868/eureka
-  instance:
-    prefer-ip-address: true
-spring:
   cloud:
     config:
       discovery:
@@ -30,4 +23,10 @@ spring:
     bus:
       enabled: true
       id: ${spring.application.name}:${spring.cloud.config.profile}:${random.value}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://alicloud.jacktong726.com:6868/eureka
+  instance:
+    prefer-ip-address: true
 myvalue: okok

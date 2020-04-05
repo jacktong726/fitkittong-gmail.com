@@ -18,8 +18,8 @@ spring:
     config:
       discovery:
         enabled: true
-        service-id: tensquare-config
-      #profile: dzy
+        service-id: TENSQUARE-CONFIG
+      profile: jacktong726
     bus:
       enabled: true
       id: ${spring.application.name}:${spring.cloud.config.profile}:${random.value}

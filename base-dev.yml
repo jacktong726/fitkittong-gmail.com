@@ -14,6 +14,12 @@ spring:
     generate-ddl: true
   rabbitmq:
     host: alicloud.jacktong726.com
+  cloud:
+    discovery:
+      #开启Config服务发现支持
+      enabled: true
+      #指定server端的name,也就是server端spring.application.name的值
+      service-id: TENSQUARE-CONIFG
 eureka:
   client:
     service-url:

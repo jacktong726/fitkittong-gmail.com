@@ -23,4 +23,4 @@ eureka:
 vcap:
   application:
     instance_index: ${spring.cloud.config.profile}
-myvalue: 123456
+myvalue: 123456a

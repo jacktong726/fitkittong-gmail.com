@@ -30,4 +30,4 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: true
-myvalue: abcdeee
+myvalue: a123

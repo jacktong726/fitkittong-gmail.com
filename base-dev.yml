@@ -14,17 +14,13 @@ spring:
     generate-ddl: true
   rabbitmq:
     host: alicloud.jacktong726.com
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: TENSQUARE-CONFIG
-    bus:
-      enabled: true
 eureka:
   client:
     service-url:
       defaultZone: http://alicloud.jacktong726.com:6868/eureka
   instance:
     prefer-ip-address: true
+vcap:
+  application:
+    instance_index: ${spring.cloud.config.profile}
 myvalue: 123456

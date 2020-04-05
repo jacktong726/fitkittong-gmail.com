@@ -14,4 +14,10 @@ spring:
     generate-ddl: true
   rabbitmq:
     host: alicloud.jacktong726.com
+eureka:
+  client:
+    service-url:
+      defaultZone: http://alicloud.jacktong726.com:6868/eureka
+  instance:
+    prefer-ip-address: true
 myvalue: abc123123DSFSDFSDFSDF

@@ -22,7 +22,6 @@ spring:
       profile: ${spring.profiles.active:default}
     bus:
       enabled: true
-      id: ${spring.application.name}:${spring.cloud.config.profile}:${random.value}
 eureka:
   client:
     service-url:

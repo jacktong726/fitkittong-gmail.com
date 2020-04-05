@@ -18,6 +18,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://alicloud.jacktong726.com:6868/eureka
+    fetch-registry: true
   instance:
     prefer-ip-address: true
 myvalue: abc123123DSFSDFSDFSDF

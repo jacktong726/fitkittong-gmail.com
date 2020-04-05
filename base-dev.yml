@@ -1,8 +1,4 @@
-server:
-  port: 9001
 spring:
-  application:
-    name: tensquare-base
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://centos7.jacktong726.com:3306/tensquare_base?characterEncoding=utf-8

@@ -15,18 +15,13 @@ spring:
   rabbitmq:
     host: alicloud.jacktong726.com
   cloud:
-    config:
-      discovery:
-        service-id: TENSQUARE-CONFIG
-        enabled: true
-      profile: ${spring.profiles.active:default}
+    bus:
+      id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.cloud.config.profile:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
 eureka:
   client:
     service-url:
       defaultZone: http://alicloud.jacktong726.com:6868/eureka
   instance:
     prefer-ip-address: true
-vcap:
-  application:
-    instance_index: ${spring.cloud.config.profile}
+ile}
 myvalue: 1

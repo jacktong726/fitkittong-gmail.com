@@ -20,7 +20,7 @@ spring:
         #开启Config服务发现支持
         enabled: true
         #指定server端的name,也就是server端spring.application.name的值
-        service-id: TENSQUARE-CONIFG
+        service-id: tensquare-conifg
     bus:
       id: ${spring.application.name}:${spring.cloud.config.profile}:${random.value}
 eureka:
